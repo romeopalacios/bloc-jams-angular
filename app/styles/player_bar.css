@@ -152,11 +152,11 @@
  }
 
  .player-bar .volume .seek-bar .thumb {
-     left: 6%;
+     left: 85%;
  }
 
  .player-bar .volume .seek-bar .fill {
-     width: 6%;
+     width: 85%;
  }
 
 @media (max-width: 640px) {

@@ -73,6 +73,13 @@
       * @type {Number}
       */
     SongPlayer.currentTime = null;
+      
+    /**
+     * @desc Sets volume on song
+     * @type {Number}
+     */
+    
+    SongPlayer.volume = null;
   
     
 // Public methods
@@ -153,9 +160,17 @@
          currentBuzzObject.setTime(time);
       }
    };
+      
+     SongPlayer.volume = function(volume) {
+      if(currentBuzzObject) {
+          currentBuzzObject.setVolume(volume);
+      }
+  };    
     
     return SongPlayer;
   }
+    
+   
     
   angular
     .module('blocJams')
